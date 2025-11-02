@@ -71,11 +71,11 @@
   </head>
   <!--end::Head-->
   <!--begin::Body-->
-  <body class="layout-fixed sidebar-expand-lg sidebar-open bg-body-tertiary">
+  <body class="layout-fixed sidebar-expand-lg text-light sidebar-open bg-dark">
     <!--begin::App Wrapper-->
     <div class="app-wrapper">
       <!--begin::Header-->
-      <nav class="app-header navbar navbar-expand bg-body">
+      <nav class="app-header navbar navbar-expand bg-primary">
         <!--begin::Container-->
         <div class="container-fluid">
           <!--begin::Start Navbar Links-->
@@ -93,48 +93,13 @@
           <ul class="navbar-nav ms-auto">
             <!--begin::Navbar Search-->
             <li class="nav-item">
-              <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-                <i class="bi bi-search"></i>
-              </a>
-            </li>
-            <!--end::Navbar Search-->
-            <!--begin::Messages Dropdown Menu-->
-            <li class="nav-item dropdown">
-              <a class="nav-link" data-bs-toggle="dropdown" href="#">
-                <i class="bi bi-chat-text"></i>
-                <span class="navbar-badge badge text-bg-danger">1</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
-                <a href="#" class="dropdown-item">
-                  <!--begin::Message-->
-                  <div class="d-flex">
-                    <div class="flex-shrink-0">
-                      <img
-                        src="./assets/img/user1-128x128.jpg"
-                        alt="User Avatar"
-                        class="img-size-50 rounded-circle me-3"
-                      />
-                    </div>
-                    <div class="flex-grow-1">
-                      <h3 class="dropdown-item-title">
-                        Brad Diesel
-                        <span class="float-end fs-7 text-danger"
-                          ><i class="bi bi-star-fill"></i
-                        ></span>
-                      </h3>
-                      <p class="fs-7">Call me whenever you can...</p>
-                      <p class="fs-7 text-secondary">
-                        <i class="bi bi-clock-fill me-1"></i> 4 Hours Ago
-                      </p>
-                    </div>
-                  </div>
-                  <!--end::Message-->
-                </a>
-                <div class="dropdown-divider"></div>
-                <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+              <div class="search-container">
+                <input type="text" class="form-control search-input" placeholder="Search...">
+                <i class="fas fa-search search-icon"></i>
               </div>
             </li>
-            <!--end::Messages Dropdown Menu-->
+            <!--end::Navbar Search-->
+            
             <!--begin::Notifications Dropdown Menu-->
             <li class="nav-item dropdown">
               <a class="nav-link" data-bs-toggle="dropdown" href="#">
@@ -310,9 +275,12 @@
             <hr>
             <li class="nav-item">
               <a href="indexTry.html" class="nav-link border border-light">
-                  <i class="nav-icon bi bi-house"></i><p>Go Back</p>
+                <i class="nav-icon bi bi-house"></i><p>Go Back</p>
               </a>
             </li>
+            <li class="nav-item">
+              <a href="indexTry.html" class="nav-link border border-light">
+                <i class="bi bi-box-arrow-in-left"></i><p>Log Out</p>
               </a>
             </li>
             </ul>
@@ -332,12 +300,6 @@
             <!--begin::Row-->
             <div class="row">
               <div class="col-sm-6"><h3 class="mb-0">Dashboard</h3></div>
-              <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-end">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
-                </ol>
-              </div>
             </div>
             <!--end::Row-->
           </div>
@@ -437,7 +399,7 @@
               <!--Widget 3 : Total Sales (bulan ini) Selesai-->
               <!--Widget 4 : Gross Profit Mulai-->
               <div class="col-lg-3 col-6">
-                <div class="small-box text-bg-dark">
+                <div class="small-box text-bg-danger">
                   <div class="inner">
                     <h3>25%</h3>
                     <p>Gross Profit</p> 
