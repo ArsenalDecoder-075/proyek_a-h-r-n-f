@@ -71,6 +71,7 @@
   </head>
   <!--end::Head-->
   <!--begin::Body-->
+  <body class="layout-fixed sidebar-expand-lg sidebar-open bg-body-tertiary">
     <!--begin::App Wrapper-->
     <div class="app-wrapper">
       <!--begin::Header-->
@@ -170,7 +171,7 @@
                   class="user-image rounded-circle shadow"
                   alt="User Image"
                 />
-                <span class="d-none d-md-inline">Ravi Sheehan Ali</span>
+                <span class="d-none d-md-inline">Mochamad Arsa Aditya</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                 <!--begin::User Image-->
@@ -181,7 +182,7 @@
                     alt="User Image"
                   />
                   <p>
-                    Ravi Sheehan Ali - Web Developer
+                    Mochamad Arsa Aditya - Web Developer
                     <small>Member since Oct 2025</small>
                   </p>
                 </li>
@@ -235,6 +236,45 @@
                 <p>Main Dashboard</p>
               </a>
             </li>
+            <!-- Master Data -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-database"></i>
+                <p>
+                  Master Data
+                  <i class="nav-arrow bi bi-chevron-right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Business Partner</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Business Partner Group</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Product</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Product Category</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Unit of Measure</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Warehouse (Locators)</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Bank</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Price List (Beli & Jual)</p></a></li>
+              </ul>
+            </li>
+
+            <!-- Transactions -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-receipt"></i>
+                <p>
+                  Transactions
+                  <i class="nav-arrow bi bi-chevron-right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Purchase Order</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Sales Order</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Raw Material Request</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Bill of Material (BoM)</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Inventory Adjustment</p></a></li>
+              </ul>
+            </li>
+
             <!-- Reports -->
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -252,6 +292,21 @@
               </ul>
             </li>
 
+            <!-- Settings -->
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon bi bi-gear"></i>
+                <p>
+                  Settings
+                  <i class="nav-arrow bi bi-chevron-right"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>User Management</p></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="nav-icon bi bi-circle"></i><p>Roles & Permissions</p></a></li>
+              </ul>
+            </li>
+
             <!-- Dashboard Kelompok -->
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -263,19 +318,6 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item"><a href="halamanArsa.html" class="nav-link"><p>Arsa</p></a></li>
-                <li class="nav-item"><a href="halamanHelmy.html" class="nav-link"><p>Helmy</p></a></li>
-                <li class="nav-item"><a href="indexNevvo.html" class="nav-link"><p>Nevvo</p></a></li>
-                <li class="nav-item"><a href="indexRevans.html" class="nav-link"><p>Revans</p></a></li>
-                <li class="nav-item"><a href="indexTryfahrainza.html" class="nav-link"><p>Fahrenza</p></a></li>
-                
-      
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item"><a href="halamanFahrainza.html" class="nav-link"><p>Fahrainza</p></a></li>
-
-
-
               </ul>
             </li>
             </ul>
@@ -559,25 +601,124 @@
             </div>
           </div>          
           <!-- Container 3 Selesai -->
-           <title>Dashboard Kendaraan</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body class="bg-light">
-
-<div class="container mt-4">
-  <div class="row g-4">
-    <!-- KIRI: Gambar Mobil -->
-    <div class="col-md-6">
-      <div class="card shadow-sm">
-        <img src="assets/img/img.jpg" class="card-img-top" alt="Mobil" style="height: 250px; object-fit: cover;">
-        <div class="card-body">
-          <h5 class="card-title mb-2">Toyota Hilux Double Cabin</h5>
-          <p class="card-text mb-1"><strong>Harga Sewa:</strong> Rp 1.500.000 / Hari</p>
-          <p class="text-muted mb-0">Tahun: 2023 | Diesel | Manual</p>
+          
+          <!-- Container 4 Mulai -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card mb-4">
+                  <div class="card-header border-0">
+                    <h3 class="card-title">Products</h3>
+                    <div class="card-tools">
+                      <a href="#" class="btn btn-tool btn-sm"> <i class="bi bi-download"></i> </a>
+                      <a href="#" class="btn btn-tool btn-sm"> <i class="bi bi-list"></i> </a>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <table class="table table-striped align-middle mb-0">
+                      <thead class="table-light">
+                        <tr>
+                          <th>Product</th>
+                          <th>Price</th>
+                          <th>Sales</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <!-- Scroll hanya pada tbody -->
+                    <div style="max-height: 325px; overflow-y: auto;">
+                      <table class="table table-striped align-middle mb-0">
+                        <tbody>
+                          <tr>
+                            <td>Honda Civic 2025</td>
+                            <td>Rp. 25.000,000 IDR</td>
+                            <td><small class="text-success me-1"><i class="bi bi-arrow-up"></i> 8%</small> 1,240 Sold</td>
+                          </tr>
+                          <tr>
+                            <td>Yamaha R15 V4</td>
+                            <td>Rp. 42.000,000 IDR</td>
+                            <td><small class="text-success me-1"><i class="bi bi-arrow-up"></i> 12%</small> 3,540 Sold</td>
+                          </tr>
+                          <tr>
+                            <td>Gearbox Transmission</td>
+                            <td>Rp. 70.000,00</td>
+                            <td><small class="text-danger me-1"><i class="bi bi-arrow-down"></i> 5%</small> 620 Sold</td>
+                          </tr>
+                          <tr>
+                            <td>Alloy Wheel 17"</td>
+                            <td>Rp. 320.000,00</td>
+                            <td><small class="text-info me-1"><i class="bi bi-arrow-up"></i> 2%</small> 1,180 Sold</td>
+                          </tr>
+                          <tr>
+                            <td>Engine Oil 4L</td>
+                            <td>Rp. 45.000,00</td>
+                            <td><small class="text-success me-1"><i class="bi bi-arrow-up"></i> 15%</small> 8,750 Sold</td>
+                          </tr>
+                          <tr>
+                            <td>Brake Pad Set</td>
+                            <td>Rp. 120.000,00</td>
+                            <td><small class="text-primary me-1"><i class="bi bi-arrow-up"></i> 24%</small> 430 Sold</td>
+                          </tr>
+                          <tr>
+                            <td>Spark Plug</td>
+                            <td>Rp. 10.000,00</td>
+                            <td><small class="text-success me-1"><i class="bi bi-arrow-up"></i> 50%</small> 12,500 Sold</td>
+                          </tr>
+                          <tr>
+                            <td>Exhaust System</td>
+                            <td>Rp. 600.000,00</td>
+                            <td><small class="text-danger me-1"><i class="bi bi-arrow-down"></i> 5%</small> 215 Sold</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-8">
+                <div class="card mb-4">
+                  <div class="card-header border-0">
+                    <div class="d-flex justify-content-between">
+                      <h3 class="card-title">Sales</h3>
+                      <a
+                        href="javascript:void(0);"
+                        class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                        >View Report</a
+                      >
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex">
+                      <p class="d-flex flex-column">
+                        <span class="fw-bold fs-5">$18,230.00</span> <span>Sales Over Time</span>
+                      </p>
+                      <p class="ms-auto d-flex flex-column text-end">
+                        <span class="text-success"> <i class="bi bi-arrow-up"></i> 33.1% </span>
+                        <span class="text-secondary">Since Past Year</span>
+                      </p>
+                    </div>
+                    <!-- /.d-flex -->
+                    <div class="position-relative mb-4">
+                      <div id="sales-chart"></div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-end">
+                      <span class="me-2">
+                        <i class="bi bi-square-fill text-primary"></i> This year
+                      </span>
+                      <span> 
+                        <i class="bi bi-square-fill text-success"></i> Record Best 
+                      </span>
+                      <span> 
+                        <i class="bi bi-square-fill text-warning"></i> Last year 
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container 4 Selesai -->
         </div>
-      </div>
-    </div>
 
         
         
@@ -586,12 +727,12 @@
       <!--begin::Footer-->
       <footer class="app-footer">
         <!--begin::To the end-->
-        <div class="float-end d-none d-sm-inline">Ravi Sheehan Ali</div>
+        <div class="float-end d-none d-sm-inline">Mochamad Arsa Aditya</div>
         <!--end::To the end-->
         <!--begin::Copyright-->
         <strong>
           Copyright &copy; 2025&nbsp;
-          <a href="https://adminlte.io" class="text-decoration-none">Ravi_anjay_gaming</a>.
+          <a href="https://adminlte.io" class="text-decoration-none">Arsa_Aug_Gaming</a>.
         </strong>
         All rights reserved.
         <!--end::Copyright-->
